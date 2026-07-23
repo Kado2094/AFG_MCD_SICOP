@@ -1,0 +1,72 @@
+2026-04-04 17:50:02,864 | INFO | File logging enabled: logs\sicop_oficial_bq_load_20260404_175002.txt
+2026-04-04 17:50:02,865 | INFO | Project=sicop-anomalias | Dataset=sicop_oficial | Location=US
+2026-04-04 17:50:02,866 | INFO | Bucket=sicop-data | Prefixes=['sicop_oficial/Datos/']
+2026-04-04 17:50:03,676 | INFO | Dataset exists: sicop-anomalias.sicop_oficial
+2026-04-04 17:50:03,677 | INFO | === Processing prefix: sicop_oficial/Datos/ ===
+2026-04-04 17:50:04,237 | INFO | Found 16 CSV files in sicop_oficial/Datos/
+2026-04-04 17:50:04,588 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/aclaraciones.csv -> sicop-anomalias.sicop_oficial.ACLARACIONES
+2026-04-04 17:50:04,589 | INFO | Detected delimiter: '|' | Columns sample mapping: [('CARTEL_NO', 'CARTEL_NO'), ('CEDULA_EMPRESA_PROVEDORA', 'CEDULA_EMPRESA_PROVEDORA'), ('ESTADO_RESPUESTA', 'ESTADO_RESPUESTA'), ('FECHA_RESPUESTA', 'FECHA_RESPUESTA'), ('FECHA_SOLICITUD', 'FECHA_SOLICITUD'), ('INST_CARTEL_NO', 'INST_CARTEL_NO'), ('NUMERO_ACLARACION', 'NUMERO_ACLARACION'), ('NUMERO_RESPUESTA', 'NUMERO_RESPUESTA')]
+2026-04-04 17:50:10,244 | INFO | OK: sicop-anomalias.sicop_oficial.ACLARACIONES | job_id=66ba5c26-8565-49b1-a653-0ebee4337889 | output_rows=111915
+2026-04-04 17:50:10,450 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/adjudicaciones.csv -> sicop-anomalias.sicop_oficial.ADJUDICACIONES
+2026-04-04 17:50:10,452 | INFO | Detected delimiter: '|' | Columns sample mapping: [('DESIERTO', 'DESIERTO'), ('FECHA_ADJ_FIRME', 'FECHA_ADJ_FIRME'), ('FECHA_COMUNICACION', 'FECHA_COMUNICACION'), ('FECHA_MAXIMA_RECURSOS', 'FECHA_MAXIMA_RECURSOS'), ('NRO_SICOP', 'NRO_SICOP'), ('NUMERO_PROCEDIMIENTO', 'NUMERO_PROCEDIMIENTO'), ('PERMITE_RECURSOS', 'PERMITE_RECURSOS')]
+2026-04-04 17:50:16,887 | INFO | OK: sicop-anomalias.sicop_oficial.ADJUDICACIONES | job_id=b95ff373-a2f2-4680-8a0b-753b6c0cf6b5 | output_rows=521668
+2026-04-04 17:50:17,055 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/carteles.csv -> sicop-anomalias.sicop_oficial.CARTELES
+2026-04-04 17:50:17,056 | INFO | Detected delimiter: '|' | Columns sample mapping: [('COD_UNIDAD_COMPRA', 'COD_UNIDAD_COMPRA'), ('FECHA_INICIO_RECEPCION', 'FECHA_INICIO_RECEPCION'), ('FECHA_INVITACION', 'FECHA_INVITACION'), ('NRO_SICOP', 'NRO_SICOP'), ('DESCRIPCION', 'DESCRIPCION'), ('MODALIDAD_PROCEDIMIENTO', 'MODALIDAD_PROCEDIMIENTO'), ('FECHA_PUBLICACION', 'FECHA_PUBLICACION'), ('NRO_PROCEDIMIENTO', 'NRO_PROCEDIMIENTO')]
+2026-04-04 17:50:27,598 | INFO | OK: sicop-anomalias.sicop_oficial.CARTELES | job_id=25aaf015-d6e8-4665-856a-27571fc96af8 | output_rows=217729
+2026-04-04 17:50:27,749 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/contratos.csv -> sicop-anomalias.sicop_oficial.CONTRATOS
+2026-04-04 17:50:27,750 | INFO | Detected delimiter: '|' | Columns sample mapping: [('CEDULA_PROVEEDOR', 'CEDULA_PROVEEDOR'), ('TIPO_MODIFICACION', 'TIPO_MODIFICACION'), ('TIPO_DISMINUCION', 'TIPO_DISMINUCION'), ('NRO_SICOP', 'NRO_SICOP'), ('VIGENCIA_CONTRATO', 'VIGENCIA_CONTRATO'), ('FECHA_NOTIFICACION', 'FECHA_NOTIFICACION'), ('IDENT_CONTRATO_PADRE', 'IDENT_CONTRATO_PADRE'), ('SECUENCIA', 'SECUENCIA')]
+2026-04-04 17:50:35,965 | INFO | OK: sicop-anomalias.sicop_oficial.CONTRATOS | job_id=14b7375f-0dd8-49bf-a0eb-06f96b82dfca | output_rows=333606
+2026-04-04 17:50:36,169 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/detalle_lineas_adjudicadas.csv -> sicop-anomalias.sicop_oficial.DETALLE_LINEAS_ADJUDICADAS
+2026-04-04 17:50:36,170 | INFO | Detected delimiter: '|' | Columns sample mapping: [('CANTIDAD_SOLICITADA', 'CANTIDAD_SOLICITADA'), ('NUMERO_LINEA', 'NUMERO_LINEA'), ('NUMERO_PARTIDA', 'NUMERO_PARTIDA')]
+2026-04-04 17:50:40,754 | INFO | OK: sicop-anomalias.sicop_oficial.DETALLE_LINEAS_ADJUDICADAS | job_id=47970d1d-dbd2-4969-bc51-8a091b063941 | output_rows=256498
+2026-04-04 17:50:40,895 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/instituciones.csv -> sicop-anomalias.sicop_oficial.INSTITUCIONES
+2026-04-04 17:50:40,895 | INFO | Detected delimiter: '|' | Columns sample mapping: [('CANTON', 'CANTON'), ('CEDULA', 'CEDULA'), ('CODIGO_POSTAL', 'CODIGO_POSTAL'), ('DIRECCION', 'DIRECCION'), ('DISTRITO', 'DISTRITO'), ('NOMBRE_INSTITUCION', 'NOMBRE_INSTITUCION'), ('REPRESENTANTE', 'REPRESENTANTE'), ('TELEFONO', 'TELEFONO')]
+2026-04-04 17:50:47,026 | INFO | OK: sicop-anomalias.sicop_oficial.INSTITUCIONES | job_id=e4878663-573f-4cfa-8206-acfcb7f279b2 | output_rows=608
+2026-04-04 17:50:47,204 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/linea_carteles.csv -> sicop-anomalias.sicop_oficial.LINEA_CARTELES
+2026-04-04 17:50:47,205 | INFO | Detected delimiter: '|' | Columns sample mapping: [('NUMERO_PARTIDA', 'NUMERO_PARTIDA'), ('PRECIO_UNITARIO_ESTIMADO', 'PRECIO_UNITARIO_ESTIMADO'), ('NUMERO_LINEA', 'NUMERO_LINEA'), ('CANTIDAD_SOLICITADA', 'CANTIDAD_SOLICITADA'), ('NRO_SICOP', 'NRO_SICOP'), ('TIPO_CAMBIO_USD', 'TIPO_CAMBIO_USD'), ('CODIGO_IDENTIFICACION', 'CODIGO_IDENTIFICACION'), ('TIPO_MONEDA', 'TIPO_MONEDA')]
+2026-04-04 17:50:55,061 | INFO | OK: sicop-anomalias.sicop_oficial.LINEA_CARTELES | job_id=5688f0f2-6902-4ffa-aefa-f6fce19f50de | output_rows=1227200
+2026-04-04 17:50:55,251 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/linea_contratos.csv -> sicop-anomalias.sicop_oficial.LINEA_CONTRATOS
+2026-04-04 17:50:55,252 | INFO | Detected delimiter: '|' | Columns sample mapping: [('ACARREOS', 'ACARREOS'), ('CANTIDAD_CONTRATADA', 'CANTIDAD_CONTRATADA'), ('CEDULA_PROVEEDOR', 'CEDULA_PROVEEDOR'), ('CODIGO_PRODUCTO', 'CODIGO_PRODUCTO'), ('DESCUENTO', 'DESCUENTO'), ('IVA', 'IVA'), ('NRO_ACTO', 'NRO_ACTO'), ('NRO_CONTRATO', 'NRO_CONTRATO')]
+2026-04-04 17:51:15,241 | INFO | OK: sicop-anomalias.sicop_oficial.LINEA_CONTRATOS | job_id=e4daf4b2-6abc-4411-b950-78c284e32b34 | output_rows=1322245
+2026-04-04 17:51:15,542 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/lineas_adjudicadas.csv -> sicop-anomalias.sicop_oficial.LINEAS_ADJUDICADAS
+2026-04-04 17:51:15,543 | INFO | Detected delimiter: '|' | Columns sample mapping: [('ACARREOS', 'ACARREOS'), ('CANTIDAD_ADJUDICADA', 'CANTIDAD_ADJUDICADA'), ('CEDULA_PROVEEDOR', 'CEDULA_PROVEEDOR'), ('DESCUENTO', 'DESCUENTO'), ('IVA', 'IVA'), ('NRO_ACTO', 'NRO_ACTO'), ('OTROS_IMPUESTOS', 'OTROS_IMPUESTOS'), ('PRECIO_UNITARIO_ADJUDICADO', 'PRECIO_UNITARIO_ADJUDICADO')]
+2026-04-04 17:51:25,986 | INFO | OK: sicop-anomalias.sicop_oficial.LINEAS_ADJUDICADAS | job_id=a6d42ab7-e6e4-445b-95b7-8437dfe3482b | output_rows=899664
+2026-04-04 17:51:26,175 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/lineas_contratacion.csv -> sicop-anomalias.sicop_oficial.LINEAS_CONTRATACION
+2026-04-04 17:51:26,176 | INFO | Detected delimiter: '|' | Columns sample mapping: [('PRECIO', 'PRECIO'), ('NUMERO_LINEA', 'NUMERO_LINEA'), ('IDENTIFICADOR', 'IDENTIFICADOR'), ('CANTIDAD', 'CANTIDAD'), ('CODIGO_IDENTIFICACION', 'CODIGO_IDENTIFICACION'), ('UNIDAD', 'UNIDAD')]
+2026-04-04 17:51:36,465 | INFO | OK: sicop-anomalias.sicop_oficial.LINEAS_CONTRATACION | job_id=b9da62d0-8722-487c-8095-0b1ed92b001a | output_rows=1213183
+2026-04-04 17:51:36,634 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/lineas_ofertas.csv -> sicop-anomalias.sicop_oficial.LINEAS_OFERTAS
+2026-04-04 17:51:36,635 | INFO | Detected delimiter: '|' | Columns sample mapping: [('ACARREOS', 'ACARREOS'), ('CANTIDAD_OFERTADA', 'CANTIDAD_OFERTADA'), ('CODIGO_PRODUCTO', 'CODIGO_PRODUCTO'), ('DESCUENTO', 'DESCUENTO'), ('IVA', 'IVA'), ('NRO_LINEA', 'NRO_LINEA'), ('NRO_OFERTA', 'NRO_OFERTA'), ('NRO_SICOP', 'NRO_SICOP')]
+2026-04-04 17:52:09,860 | INFO | OK: sicop-anomalias.sicop_oficial.LINEAS_OFERTAS | job_id=21396522-5c48-4583-b6e1-2e1139fbe2e9 | output_rows=3021336
+2026-04-04 17:52:10,054 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/ofertas.csv -> sicop-anomalias.sicop_oficial.OFERTAS
+2026-04-04 17:52:10,055 | INFO | Detected delimiter: '|' | Columns sample mapping: [('CEDULA_PROVEEDOR', 'CEDULA_PROVEEDOR'), ('ELEGIBLE', 'ELEGIBLE'), ('ESTADO', 'ESTADO'), ('FECHA_PRESENTA_OFERTA', 'FECHA_PRESENTA_OFERTA'), ('IDENTIFICADOR', 'IDENTIFICADOR'), ('ID_CONSORCIO', 'ID_CONSORCIO'), ('NRO_SICOP', 'NRO_SICOP'), ('NUMERO_PROCEDIMIENTO', 'NUMERO_PROCEDIMIENTO')]
+2026-04-04 17:52:28,724 | INFO | OK: sicop-anomalias.sicop_oficial.OFERTAS | job_id=1197e444-8b02-483d-8af0-75b871aa5b0f | output_rows=1625261
+2026-04-04 17:52:28,901 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/ordenes.csv -> sicop-anomalias.sicop_oficial.ORDENES
+2026-04-04 17:52:28,902 | INFO | Detected delimiter: '|' | Columns sample mapping: [('ACARREOS', 'ACARREOS'), ('CANTIDAD_CONTRATADA', 'CANTIDAD_CONTRATADA'), ('CODIGO_PRODUCTO', 'CODIGO_PRODUCTO'), ('DESCUENTO', 'DESCUENTO'), ('IDENTIFICADOR', 'IDENTIFICADOR'), ('IVA', 'IVA'), ('LINEA_ORDEN_PEDIDO', 'LINEA_ORDEN_PEDIDO'), ('MONTO_ORDEN_PEDIDO', 'MONTO_ORDEN_PEDIDO')]
+2026-04-04 17:52:41,806 | INFO | OK: sicop-anomalias.sicop_oficial.ORDENES | job_id=d48478b0-99db-49d0-9ff6-806b9f506ada | output_rows=1164324
+2026-04-04 17:52:41,999 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/proveedores.csv -> sicop-anomalias.sicop_oficial.PROVEEDORES
+2026-04-04 17:52:42,000 | INFO | Detected delimiter: '|' | Columns sample mapping: [('CANTON', 'CANTON'), ('CEDULA_PROVEEDOR', 'CEDULA_PROVEEDOR'), ('CODIGO_POSTAL', 'CODIGO_POSTAL'), ('DISTRITO', 'DISTRITO'), ('NOMBRE_PROVEEDOR', 'NOMBRE_PROVEEDOR'), ('PROVINCIA', 'PROVINCIA'), ('TAMAÑO_PROVEEDOR', 'TAMA_O_PROVEEDOR'), ('TIPO_PROVEEDOR', 'TIPO_PROVEEDOR')]
+2026-04-04 17:52:45,856 | INFO | OK: sicop-anomalias.sicop_oficial.PROVEEDORES | job_id=820d7612-34b3-4ea7-bfa4-2da95e832783 | output_rows=55613
+2026-04-04 17:52:46,042 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/recursos.csv -> sicop-anomalias.sicop_oficial.RECURSOS
+2026-04-04 17:52:46,043 | INFO | Detected delimiter: '|' | Columns sample mapping: [('ASUNTO', 'ASUNTO'), ('CAUSA_RESULTADO', 'CAUSA_RESULTADO'), ('CEDULA_PROVEEDOR', 'CEDULA_PROVEEDOR'), ('FECHA_PRESENTACION_RECURSO', 'FECHA_PRESENTACION_RECURSO'), ('NRO_ACTO', 'NRO_ACTO'), ('NRO_RECURSO', 'NRO_RECURSO'), ('NRO_SICOP', 'NRO_SICOP'), ('NUMERO_PROCEDIMIENTO', 'NUMERO_PROCEDIMIENTO')]
+2026-04-04 17:52:48,915 | INFO | OK: sicop-anomalias.sicop_oficial.RECURSOS | job_id=a5a3c4ce-4246-48d2-aa24-0e3c2b30cad6 | output_rows=66452
+2026-04-04 17:52:49,167 | INFO | Loading gs://sicop-data/sicop_oficial/Datos/solicitud_contratacion.csv -> sicop-anomalias.sicop_oficial.SOLICITUD_CONTRATACION
+2026-04-04 17:52:49,167 | INFO | Detected delimiter: '|' | Columns sample mapping: [('JUST_PROCEDENCIA', 'JUST_PROCEDENCIA'), ('NUMERO_PROCEDIMIENTO', 'NUMERO_PROCEDIMIENTO'), ('CARTEL_NO', 'CARTEL_NO'), ('MONEDA', 'MONEDA'), ('TIPO_PROCEDIMIENTO', 'TIPO_PROCEDIMIENTO'), ('PRESUPUESTO', 'PRESUPUESTO'), ('FECHA_TRAMITE', 'FECHA_TRAMITE'), ('FINALIDAD_PUBLICA', 'FINALIDAD_PUBLICA')]
+2026-04-04 17:53:14,059 | INFO | OK: sicop-anomalias.sicop_oficial.SOLICITUD_CONTRATACION | job_id=d824c03d-cd4b-47b0-91f4-59ce36ac2d4c | output_rows=254523
+2026-04-04 17:53:14,060 | INFO | Summary: 16 succeeded, 0 failed.
+2026-04-04 17:53:14,061 | INFO | Loaded tables (table_id | output_rows | job_id):
+2026-04-04 17:53:14,062 | INFO | - sicop-anomalias.sicop_oficial.ACLARACIONES | 111915 | 66ba5c26-8565-49b1-a653-0ebee4337889
+2026-04-04 17:53:14,062 | INFO | - sicop-anomalias.sicop_oficial.ADJUDICACIONES | 521668 | b95ff373-a2f2-4680-8a0b-753b6c0cf6b5
+2026-04-04 17:53:14,063 | INFO | - sicop-anomalias.sicop_oficial.CARTELES | 217729 | 25aaf015-d6e8-4665-856a-27571fc96af8
+2026-04-04 17:53:14,064 | INFO | - sicop-anomalias.sicop_oficial.CONTRATOS | 333606 | 14b7375f-0dd8-49bf-a0eb-06f96b82dfca
+2026-04-04 17:53:14,065 | INFO | - sicop-anomalias.sicop_oficial.DETALLE_LINEAS_ADJUDICADAS | 256498 | 47970d1d-dbd2-4969-bc51-8a091b063941
+2026-04-04 17:53:14,065 | INFO | - sicop-anomalias.sicop_oficial.INSTITUCIONES | 608 | e4878663-573f-4cfa-8206-acfcb7f279b2
+2026-04-04 17:53:14,066 | INFO | - sicop-anomalias.sicop_oficial.LINEA_CARTELES | 1227200 | 5688f0f2-6902-4ffa-aefa-f6fce19f50de
+2026-04-04 17:53:14,066 | INFO | - sicop-anomalias.sicop_oficial.LINEA_CONTRATOS | 1322245 | e4daf4b2-6abc-4411-b950-78c284e32b34
+2026-04-04 17:53:14,066 | INFO | - sicop-anomalias.sicop_oficial.LINEAS_ADJUDICADAS | 899664 | a6d42ab7-e6e4-445b-95b7-8437dfe3482b
+2026-04-04 17:53:14,067 | INFO | - sicop-anomalias.sicop_oficial.LINEAS_CONTRATACION | 1213183 | b9da62d0-8722-487c-8095-0b1ed92b001a
+2026-04-04 17:53:14,067 | INFO | - sicop-anomalias.sicop_oficial.LINEAS_OFERTAS | 3021336 | 21396522-5c48-4583-b6e1-2e1139fbe2e9
+2026-04-04 17:53:14,068 | INFO | - sicop-anomalias.sicop_oficial.OFERTAS | 1625261 | 1197e444-8b02-483d-8af0-75b871aa5b0f
+2026-04-04 17:53:14,068 | INFO | - sicop-anomalias.sicop_oficial.ORDENES | 1164324 | d48478b0-99db-49d0-9ff6-806b9f506ada
+2026-04-04 17:53:14,069 | INFO | - sicop-anomalias.sicop_oficial.PROVEEDORES | 55613 | 820d7612-34b3-4ea7-bfa4-2da95e832783
+2026-04-04 17:53:14,069 | INFO | - sicop-anomalias.sicop_oficial.RECURSOS | 66452 | a5a3c4ce-4246-48d2-aa24-0e3c2b30cad6
+2026-04-04 17:53:14,070 | INFO | - sicop-anomalias.sicop_oficial.SOLICITUD_CONTRATACION | 254523 | d824c03d-cd4b-47b0-91f4-59ce36ac2d4c
