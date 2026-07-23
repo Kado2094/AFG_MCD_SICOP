@@ -1,2 +1,2 @@
-# AFG_MCD_SICOP
-Trabajo Final de Graduacion - Deteccion de Anomalias en Compras Publicas
+# Actividad Final de Graduación
+Trabajo Final de Graduación - Detección no supervisada de anomalías en la contratación pública de Costa Rica
