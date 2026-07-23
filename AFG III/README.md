@@ -8,14 +8,14 @@ El método principal es **Isolation Forest**, aplicado por segmento y clase de p
 
 ## Lógica computacional y archivos principales
 
-| Etapa | Lógica principal | Archivo reproducible |
+| Etapa | Lógica principal | Archivos base |
 |---|---|---|
-| Base analítica | Unir oferta, ítem, cartel, proveedor e institución; convertir precios a CRC; calcular competencia, estadísticas y ratios. | [`_build_oferta_item.py`](AFG%20III/Anexos/_build_oferta_item.py) |
-| Modelo principal | Transformar variables, ajustar modelos por segmento y clase UNSPSC, combinar puntajes y aplicar percentiles. | [`IF_SICOP_v2.ipynb`](AFG%20III/Anexos/IF_SICOP_v2.ipynb) |
-| Explicabilidad | Calcular valores SHAP, agrupar contribuciones y caracterizar tipologías dominantes de anomalía. | [`IF_SICOP_shap.ipynb`](AFG%20III/Anexos/IF_SICOP_shap.ipynb) |
-| Contrastes | Comparar Isolation Forest con HBOS, ECOD y LOF; calcular intersecciones, consenso entre métodos, reglas heurísticas y validación temporal. | [`benchmark_metodos.ipynb`](AFG%20III/Anexos/benchmark_metodos.ipynb) |
-| Evidencia del informe | Calcular tamaños de efecto, correlaciones y análisis estadísticos complementarios. | [`analisis_complementario.py`](AFG%20III/Anexos/analisis_complementario.py) |
-| Figuras del informe | Generar las visualizaciones verificables utilizadas en el informe final. | [`generar_figuras_informe.py`](AFG%20III/Anexos/generar_figuras_informe.py) |
+| Base analítica | Unir oferta, ítem, cartel, proveedor e institución; convertir precios a CRC; calcular competencia, estadísticas y ratios. | [`_build_oferta_item.py`](/Anexos/_build_oferta_item.py) |
+| Modelo principal | Transformar variables, ajustar modelos por segmento y clase UNSPSC, combinar puntajes y aplicar percentiles. | [`IF_SICOP_v2.ipynb`](/Anexos/IF_SICOP_v2.ipynb) |
+| Explicabilidad | Calcular valores SHAP, agrupar contribuciones y caracterizar tipologías dominantes de anomalía. | [`IF_SICOP_shap.ipynb`](/Anexos/IF_SICOP_shap.ipynb) |
+| Contrastes | Comparar Isolation Forest con HBOS, ECOD y LOF; calcular intersecciones, consenso entre métodos, reglas heurísticas y validación temporal. | [`benchmark_metodos.ipynb`](/Anexos/benchmark_metodos.ipynb) |
+| Evidencia del informe | Calcular tamaños de efecto, correlaciones y análisis estadísticos complementarios. | [`analisis_complementario.py`](/Anexos/analisis_complementario.py) |
+| Figuras del informe | Generar las visualizaciones verificables utilizadas en el informe final. | [`generar_figuras_informe.py`](/Anexos/generar_figuras_informe.py) |
 
 ## Flujo general
 
