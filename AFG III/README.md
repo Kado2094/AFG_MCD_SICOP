@@ -2,9 +2,9 @@
 
 Este repositorio reúne los principales artefactos computacionales del Trabajo Final de Graduación sobre detección y priorización de ofertas atípicas en datos del Sistema Integrado de Compras Públicas de Costa Rica (SICOP).
 
-El flujo parte de una base analítica con granularidad **oferta–ítem**, construida a partir de información de carteles, ofertas, contratos, instituciones y proveedores. Sobre esta base se generan variables relacionadas con precios, competencia, temporalidad y clasificación UNSPSC, que posteriormente se utilizan para ajustar modelos no supervisados.
+El flujo parte de una base analítica con granularidad oferta–ítem, construida a partir de información de carteles, ofertas, contratos, instituciones y proveedores. Sobre esta base se generan variables relacionadas con precios, competencia, temporalidad y clasificación UNSPSC, que posteriormente se utilizan para ajustar modelos no supervisados.
 
-El método principal es **Isolation Forest**, aplicado por segmento y clase de producto. La interpretación de los resultados se realiza mediante **SHAP**, mientras que la robustez del enfoque se contrasta con otros métodos de detección de anomalías y con reglas heurísticas. Los resultados deben interpretarse como un mecanismo de **priorización para revisión**, no como evidencia concluyente de irregularidad o fraude.
+El método principal es Isolation Forest, aplicado por segmento y clase de producto. La interpretación de los resultados se realiza mediante SHAP, mientras que la robustez del enfoque se contrasta con otros métodos de detección de anomalías y con reglas heurísticas. Los resultados deben interpretarse como un mecanismo de priorización para revisión, no como evidencia concluyente de irregularidad o fraude.
 
 ## Lógica computacional y archivos principales
 
@@ -38,7 +38,7 @@ Isolation Forest por segmento y clase UNSPSC
         └──► Evidencia estadística y figuras del informe
 ```
 
-## Estructura relevante
+## Estructura
 
 ```text
 AFG_MCD_SICOP/
